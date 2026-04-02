@@ -1,0 +1,35 @@
+# Git
+.git
+.gitignore
+
+# Python
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+.Python
+env
+venv
+.venv
+
+# IDE
+.idea
+.vscode
+*.swp
+*.swo
+
+# Sessions (будут монтироваться как volumes)
+*.session
+
+# Env files
+.env
+.env.*
+
+# Docker
+Dockerfile
+docker-compose*.yml
+
+# Misc
+*.md
+.DS_Store
+
