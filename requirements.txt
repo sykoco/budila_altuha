@@ -1,0 +1,23 @@
+# Telegram Bot (основной бот)
+python-telegram-bot==20.7
+
+# Pyrogram для звонков
+pyrogram==2.0.106
+tgcrypto==1.2.5
+
+# VoIP - попробуем tgcalls от MarshalX
+tgcalls
+
+# База данных PostgreSQL
+sqlalchemy[asyncio]==2.0.23
+asyncpg==0.29.0
+greenlet==3.0.2
+
+# Шедулер
+apscheduler==3.10.4
+
+# Утилиты
+python-dotenv==1.0.0
+
+# HTTP клиент
+aiohttp>=3.9.3

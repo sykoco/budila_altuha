@@ -1,0 +1,21 @@
+[Unit]
+Description=Telegram Alarm Bot
+After=network.target postgresql.service
+Wants=postgresql.service
+
+[Service]
+Type=simple
+User=root
+Group=root
+WorkingDirectory=/root/telegram-alarm-bot
+Environment="PATH=/root/telegram-alarm-bot/venv/bin:/usr/local/bin:/usr/bin:/bin"
+EnvironmentFile=/root/telegram-alarm-bot/.env
+ExecStart=/root/telegram-alarm-bot/venv/bin/python alarm_bot.py
+Restart=always
+RestartSec=10
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target
+
